@@ -25,3 +25,15 @@ deactivate Меню
 deactivate Область_редактирования
 @enduml
 
+
+@startuml 
+left to right direction
+title Текстовый редактор (диаграмма развёртывания)
+skinparam backgroundcolor SkyBlue
+database Файл
+node Система_поиска_ключ_слов
+node Пользователь
+
+Система_поиска_ключ_слов - Файл: Ищет ключевые слова
+Пользователь - Файл: Редактирует
+@enduml
